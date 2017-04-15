@@ -1,0 +1,26 @@
+
+.album-cover
+{
+	height: 450px;	
+}
+.album-cover1
+{
+	height: 300px;	
+}
+.album-cover1.thumbbail img
+{
+	height: 100%;
+	width: 100%;	
+}
+
+.header
+{
+	background-color: lavender;
+
+}
+body 
+{ 
+	padding-top:30px; 
+}
+.form-control { margin-bottom: 10px; }
+
