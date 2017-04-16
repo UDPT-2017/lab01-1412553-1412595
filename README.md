@@ -51,8 +51,7 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 ## Demo
 
-Link ảnh GIF demo ứng dụng:
-<img src="http://imgur.com/a/ita16" alt="">
+Link ảnh GIF demo ứng dụng: http://imgur.com/a/ita16
 
 ![Video Walkthrough](demo.gif)
 
