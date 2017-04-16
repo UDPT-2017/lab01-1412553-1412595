@@ -4,7 +4,7 @@
 
 Thành viên:
 * [x] **1412553** Tên sinh viên 1 (tên tài khoản tqhb1995)
-* [x] **1412595** Tên sinh viên 2 (tên tài khoản github)
+* [x] **1412595** Tên sinh viên 2 (tên tài khoản VoThiThanhTruc)
 
 URL: **URL hosting của bài tập**
 
