@@ -43,18 +43,7 @@ app.get('/blog03', function(req, res)
 
 app.get('/conan', function(req, res)
 {
-	var img = [
-		'img/conan/img1.jpg',
-		'img/conan/img2.jpg',
-		'img/conan/img3.jpg',
-		'img/conan/img4.jpg',
-		'img/conan/img5.jpg',
-		'img/conan/img6.jpg',
-		'img/conan/img7.jpg',
-		'img/conan/img8.jpg',
-		'img/conan/img9.jpg',
-		'img/conan/img10.jpg',
-	];
+	
 	res.render('conan', {title: 'Bộ sưu tập ảnh hoạt hình', message: 'Img Conan'});
 });
 
@@ -107,4 +96,4 @@ app.get('/tom', function(req, res)
 
 app.listen(3000, function() {
 	console.log ('OK');
-});
+});s
