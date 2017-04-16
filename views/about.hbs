@@ -1,1 +1,238 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+    var gmap = new google.maps.LatLng(10.762915, 106.682024);
+    var marker;
+    function initialize()
+    {
+        var mapProp = {
+          center:new google.maps.LatLng(10.762915, 106.682024),
+          zoom:16,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+ 
+      var map=new google.maps.Map(document.getElementById("googleMap")
+      ,mapProp);
+ 
+      var styles = [
+      {
+          featureType: 'road.arterial',
+          elementType: 'all',
+          stylers: [
+          { hue: '#fff' },
+          { saturation: 100 },
+          { lightness: -48 },
+          { visibility: 'on' }
+        ]
+      },{
+          featureType: 'road',
+          elementType: 'all',
+          stylers: [
+ 
+        ]
+        },
+      {
+          featureType: 'water',
+          elementType: 'geometry.fill',
+          stylers: [
+            { color: '#adc9b8' }
+        ]
+      },{
+          featureType: 'landscape.natural',
+          elementType: 'all',
+          stylers: [
+            { hue: '#809f80' },
+            { lightness: -35 }
+        ]
+      }
+    ];
+ 
+      var styledMapType = new google.maps.StyledMapType(styles);
+      map.mapTypes.set('Styled', styledMapType);
+ 
+      marker = new google.maps.Marker({
+      map:map,
+      draggable:true,
+      animation: google.maps.Animation.DROP,
+       position: gmap
+      });
+     google.maps.event.addListener(marker, 'click', toggleBounce);
+    }
+ 
+    function toggleBounce() {
+ 
+      if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+      } else {
+       marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+ 
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+  <link rel="stylesheet" type = "text/css" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div id = "top">
+          <a href="" ><img src="img/anhbia.png" alt="" width="100%" height="auto" controls></a>   
+        </div>   
+        <div class="header-menu">
+        <!-- menu sẽ tự động mất đi và có nút nhấn để hiện menu trên thiết bị di động -->
+           <nav class="navbar navbar-inverse" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-toggler-icon" href="/logincomple"><img src="img/logo.gif" alt="" width="100" height="50"></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
+                    <li><a href="/albums"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Albums </a></li>
+                    <li><a href="/about"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About </a></li>
+                    <li><a href="/myblog"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Blog </a></li>
+                    <ul class="nav navbar-nav navbar-right nav navbar-nav">
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chào bạn,...
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/index">Đăng xuất</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+      <!-- End Menu Bootstrap --> 
+  </header>
+  
+
+
+
+	<div class="container">
+    <div class="row">
+        <div class = "col-sm-2">
+          <div class = "navbar-header">
+        <button type = "button" class = "navbar-toggle collapsed" data-target = "#main-nav" aria-expanded = "false"  data-toggle = "collapse" name = "button"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="main-nav">     
+              <a href="#no1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"> Quốc gia <i class="fa fa-caret-down"></i></a>
+                <div class="collapse" id="no1">
+                  <a href="#no11" class="list-group-item" data-toggle="collapse" data-parent="#no11"> Mỹ <i class="fa fa-caret-down"></i></a>
+                    <div class="collapse list-group-submenu" id="no11">
+                        <a href="#" class="list-group-item" data-parent="#no11"> Walt Desney </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Warner Bros </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Paramount Pictures </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Pixar </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> 20th Century Fox </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Comlumbia Pictures </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Dreamworks </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Universal </a>
+                    </div>
+                  <a href="#no12" class="list-group-item" data-toggle="collapse" data-parent="#no12"> Nhật Bản <i class="fa fa-caret-down"></i></a>
+                  <div class="collapse list-group-submenu" id="no12">
+                        <a href="#" class="list-group-item" data-parent="#no12"> Studio Ghibli </a>
+                        <a href="#" class="list-group-item" data-parent="#no12"> Sunrise </a>
+                        <a href="#" class="list-group-item" data-parent="#no12"> Toei Animation </a>
+                        <a href="#" class="list-group-item" data-parent="#no12"> Gainax </a>
+                  </div>
+                </div>
+                <a href="#no2" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Thể loại<i class="fa fa-caret-down"></i></a>
+                <div class="collapse" id="no2">
+                  <a href="" class="list-group-item"> Hài hước </a>
+                  <a href="" class="list-group-item"> Phiêu lưu </a>
+                  <a href="" class="list-group-item"> Siêu nhân</a>
+                </div>
+                <a href="#no3" class="list-group-item list-group-item-success" data-parent="#MainMenu"> Phim lẻ </a>
+                <a href="#no4" class="list-group-item list-group-item-success" data-parent="#MainMenu"> Phim bộ </a>
+              
+          </div>
+        </div>
+        </div>
+        <div class = "col-sm-10">
+          <div class="jumbotron text-center">
+            <h1>Welcome to the BoyGirl's website</h1>
+          </div>    
+          <div class="row">
+              <div class="col-md-3 col-md-offset-1">
+                <div class="thumbnail">
+                    <img src="img/1412595.jpg" alt="...">
+                      <div class="caption">
+                        <h2>Võ Thị Thanh Trúc</h2>
+                        <h4>MSSV: 1412595</h4>
+                        <p>Quê quán: Tiền Giang</p>
+                        <p>Điện thoại: 0166 816 8279</p>        
+                      </div>            
+                </div>
+             </div>
+             
+            <div class="col-md-3 col-md-offset-4">
+                <div class="thumbnail">
+                    <img src="img/1412553.jpg" alt="...">
+                      <div class="caption">
+                        <h2>Dương Minh Toàn</h2>
+                        <h4>MSSV: 1412553</h4>
+                        <p>Quê quán: Phú Yên</p>
+                        <p>Điện thoại: 0164 6821 1073</p>        
+                      </div>            
+                </div>
+             </div>
+          </div>
+          <div class="row">
+            <div class = "col-md-1 col-md-offset-1">
+              <div id="googleMap" style="width: 900px; height: 400px;"> 
+            Google Map
+          </div>
+        </div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="container">
+      <div class="footer">
+        <div class="footer-info text-center">
+          Dương Minh Toàn - Võ Thị Thanh Trúc
+          <br>
+          1412553-1412595 Copyright© 2017<br>
+        </div>
+      </div>
+  </div>
+
+
+
+
+  
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery-3.2.0.min.js" type = "text/javascript"></script>
+  <script src="js/bootstrap.min.js" type = "text/javascript"></script>
+  
+</body>
+</html>
+
+

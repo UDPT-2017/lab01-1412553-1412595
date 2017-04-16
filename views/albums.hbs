@@ -1,1 +1,235 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type = "text/css" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div id = "top">
+          <a href="" ><img src="img/anhbia.png" alt="" width="100%" height="auto" controls></a>   
+        </div>   
+        <div class="header-menu">
+        <!-- menu sẽ tự động mất đi và có nút nhấn để hiện menu trên thiết bị di động -->
+           <nav class="navbar navbar-inverse" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-toggleable-md" href="/logincomple"><img src="img/logo.gif" alt="" width="100" height="50"></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
+                    <li><a href="/albums"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Albums </a></li>
+                    <li><a href="/about"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About </a></li>
+                    <li><a href="/myblog"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Blog </a></li>
+                    <ul class="nav navbar-nav navbar-right nav navbar-nav">
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chào bạn,...
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/">Đăng xuất</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+      <!-- End Menu Bootstrap --> 
+  </header>
+  <div class="container">
+      <div class="row">
+        <div class = "col-sm-2">
+          <div class = "navbar-header">
+        <button type = "button" class = "navbar-toggle collapsed" data-target = "#main-nav" aria-expanded = "false"  data-toggle = "collapse" name = "button"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="main-nav">     
+              <a href="#no1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu"> Quốc gia <i class="fa fa-caret-down"></i></a>
+                <div class="collapse" id="no1">
+                  <a href="#no11" class="list-group-item" data-toggle="collapse" data-parent="#no11"> Mỹ <i class="fa fa-caret-down"></i></a>
+                    <div class="collapse list-group-submenu" id="no11">
+                        <a href="#" class="list-group-item" data-parent="#no11"> Walt Desney </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Warner Bros </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Paramount Pictures </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Pixar </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> 20th Century Fox </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Comlumbia Pictures </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Dreamworks </a>
+                        <a href="#" class="list-group-item" data-parent="#no11"> Universal </a>
+                    </div>
+                  <a href="#no12" class="list-group-item" data-toggle="collapse" data-parent="#no12"> Nhật Bản <i class="fa fa-caret-down"></i></a>
+                  <div class="collapse list-group-submenu" id="no12">
+                        <a href="#" class="list-group-item" data-parent="#no12"> Studio Ghibli </a>
+                        <a href="#" class="list-group-item" data-parent="#no12"> Sunrise </a>
+                        <a href="#" class="list-group-item" data-parent="#no12"> Toei Animation </a>
+                        <a href="#" class="list-group-item" data-parent="#no12"> Gainax </a>
+                  </div>
+                </div>
+                <a href="#no2" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Thể loại<i class="fa fa-caret-down"></i></a>
+                <div class="collapse" id="no2">
+                  <a href="" class="list-group-item"> Hài hước </a>
+                  <a href="" class="list-group-item"> Phiêu lưu </a>
+                  <a href="" class="list-group-item"> Siêu nhân</a>
+                </div>
+                <a href="#no3" class="list-group-item list-group-item-success" data-parent="#MainMenu"> Phim lẻ </a>
+                <a href="#no4" class="list-group-item list-group-item-success" data-parent="#MainMenu"> Phim bộ </a>
+              
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-sm-10">
+          <div class = "col-md-7 col-md-offset-3">
+                <h1> Tổng hợp các bộ phim hoạt hình </h1>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="album-cover">
+                  <div class="thumbnail">
+                    <a href="/conan"><img src="img/avatar.conan.gif" alt="..."></a>
+                      <div class="caption">
+                        <h3>Hoạt hình: Thám tử lừng danh Conan</h3>
+                          <p>Người đăng: Dương Minh Toàn</p>
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 12</span>
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true">39</span>
+                          <p><a href="http://phimbathu.com/tham-tu-lung-danh-conan-3379.html" class="btn btn-primary" role="button">Link phim</a></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="album-cover">
+                  <div class="thumbnail">
+                    <a href="/tom"><img src="img/avatar.tom.gif" alt="..."></a>
+                      <div class="caption">
+                        <h3>Hoạt hình: Tom & Jerry</h3>
+                          <p>Người đăng: Dương Minh Toàn</p>
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 65</span>
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true">109</span>
+                          <p><a href="http://bilutv.com/xem-phim/phim-tom-va-jerry-tom-jerry-2553" class="btn btn-primary" role="button">Link phim</a></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="album-cover">
+                  <div class="thumbnail">
+                    <a href="/nguoinhen"><img src="img/avatar.nguoinhen.gif" alt="..."></a>
+                      <div class="caption">
+                        <h3>Hoạt hình: Người nhện</h3>
+                          <p>Người đăng: Dương Minh Toàn</p>
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 112</span>
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true">329</span>
+                          <p><a href="http://phimbathu.com/xem-phim/phim-nguoi-nhen-1-spider-man-1-2002-1367" class="btn btn-primary" role="button">Link phim</a></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="album-cover">
+                  <div class="thumbnail">
+                    <a href="/doremon"><img src="img/avatar.doremon.gif" alt="..."></a>
+                      <div class="caption">
+                        <h3>Hoạt hình: Doremon và những người bạn</h3>
+                          <p>Người đăng: Dương Minh Toàn</p>
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 312</span>
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true">639</span>
+                          <p><a href="http://hdonline.vn/phim-tuyen-tap-phim-hoat-hinh-doremon-2457.html" class="btn btn-primary" role="button">Link phim</a></p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="album-cover">
+                  <div class="thumbnail">
+                    <a href="/naruto"><img src="img/avatar.naruto.gif" alt="..."></a>
+                      <div class="caption">
+                        <h3>Hoạt hình: Naruto truyền kỳ</h3>
+                          <p>Người đăng: Dương Minh Toàn</p>
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 212</span>
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true">539</span>
+                          <p><a href="http://bilutv.com/phim/naruto-shippuuden-344.html" class="btn btn-primary" role="button">Link phim</a></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="album-cover">
+                  <div class="thumbnail">
+                    <a href="/pokemon"><img src="img/avatar.pokemon.gif" alt="..."></a>
+                      <div class="caption">
+                        <h3>Hoạt hình: Pokemon</h3>
+                          <p>Người đăng: Dương Minh Toàn</p>
+                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"> 212</span>
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true">539</span>
+                          <p><a href="http://phimhoathinh.biz/phim/buu-boi-than-ky-pokemon-tron-bo_ieyba/" class="btn btn-primary" role="button">Link phim</a></p>
+                      </div>
+                  </div>
+                </div>
+               
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+
+
+              
+
+
+
+
+    <div class="container">
+      <div class="footer">
+        <div class="footer-info text-center">
+        Dương Minh Toàn - Võ Thị Thanh Trúc
+      <br>
+        1412553-1412595 Copyright© 2017<br>
+      </div>
+      </div>
+    </div>
+
+  
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery-3.2.0.min.js" type = "text/javascript"></script>
+  <script src="js/bootstrap.min.js" type = "text/javascript"></script>
+  
+</body>
+</html>
+
+
+
+

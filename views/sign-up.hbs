@@ -1,1 +1,119 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type = "text/css" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div id = "top">
+          <a href="" ><img src="img/anhbia.png" alt="" width="100%" height="auto" controls></a>   
+        </div>   
+        <div class="header-menu">
+        <!-- menu sẽ tự động mất đi và có nút nhấn để hiện menu trên thiết bị di động -->
+           <nav class="navbar navbar-inverse" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-toggleable-md" href="/logincomple"><img src="img/logo.gif" alt="" width="100" height="50"></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Albums </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Blog </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Sign Up </a></li>
+                    <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+      <!-- End Menu Bootstrap --> 
+  </header>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 well well-sm text-center">
+            <legend><a href=""><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+            <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                        <option value="Month">Tháng 1</option>
+                        <option value="Month">Tháng 2</option>
+                        <option value="Month">Tháng 3</option>
+                        <option value="Month">Tháng 4</option>
+                        <option value="Month">Tháng 5</option>
+                        <option value="Month">Tháng 6</option>
+                        <option value="Month">Tháng 7</option>
+                        <option value="Month">Tháng 8</option>
+                        <option value="Month">Tháng 9</option>
+                        <option value="Month">Tháng 10</option>
+                        <option value="Month">Tháng 11</option>
+                        <option value="Month">Tháng 12</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <input class="form-control" name="yourday" placeholder="Day" type="number" />
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <input class="form-control" name="youryear" placeholder="Year" type="number" />
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container">
+      <div class="footer">
+        <div class="footer-info text-center">
+          Dương Minh Toàn - Võ Thị Thanh Trúc
+          <br>
+          1412553-1412595 Copyright© 2017<br>
+        </div>
+      </div>
+  </div>
