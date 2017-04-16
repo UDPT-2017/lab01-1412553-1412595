@@ -13,9 +13,9 @@ URL: **URL hosting của bài tập**
 Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm vào chức năng theo mẫu. Mục nào ko có MSSV là tính điểm theo nhóm. Cần sắp xếp các chức năng bên dưới theo thứ tự MSSV đã thực hiện.
 
 Yêu cầu **GIT**
-* [ ] Có sử dụng GIT.
+* [x] Có sử dụng GIT.
 * [ ] Sử dụng GIT theo Centralized Workflow.
-* [ ] Sử dụng GIT theo Feature Branch Workflow.
+* [x] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
@@ -31,7 +31,7 @@ Yêu cầu **bắt buộc**
 * [ ] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**MSSV**)
 
 Yêu cầu **không bắt buộc**:
-* [ ] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**MSSV**)
+* [x] Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản. (**MSSV**)
 * [ ] Có thể xem danh sách các comment của từng bài viết.  (**MSSV**)
 * [ ] Cho phép người dùng đã đăng nhập đăng thêm bài viết mới. (**MSSV**)
 * [ ] Cho phép người dùng đã đăng nhập comment cho bài viết. (**MSSV**)
